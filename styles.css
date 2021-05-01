@@ -91,8 +91,12 @@ body {
   align-self: center;
   flex-wrap: wrap;
   padding-left: 25px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox scrollbar hidden */
+  -ms-overflow-style: none; /* IE and Edge scrollbar hidden */
+}
+
+.rightInnerContent::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera scrollbar hidden */
 }
 
 .itemContainer {

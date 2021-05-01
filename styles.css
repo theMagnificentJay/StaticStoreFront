@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  background: rgb(70, 70, 70);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.headerContainer {
+  border-bottom: 1px solid white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.headerContainer h1 {
+  margin-top: 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 10px;
+}
+
+.mainContent {
+  /* border: 2px solid blue; */
+  margin: 15px;
+  margin-top: 75px;
+  display: flex;
+  height: 810px;
+}
+
+.leftContent {
+  border: 2px double rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 15px;
+  float: left;
+  flex-grow: 1;
+  background-color: gray;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+  max-width: 25%;
+}
+
+.leftContent h2 {
+  text-align: center;
+  letter-spacing: 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.rightContent {
+  border: 2px double rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 15px;
+  float: right;
+  flex-grow: 3;
+  text-align: center;
+  background-color: gray;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  max-width: 73%;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.rightContent h2 {
+  text-align: center;
+  letter-spacing: 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.footerContainer {
+  border-top: 1px solid white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* box-shadow: 0px 50px 20px white; */
+}
+
+.rightInnerContent {
+  margin: 15px;
+  display: flex;
+  overflow-y: scroll;
+  max-height: 100%;
+  align-self: center;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.itemContainer {
+  margin: 10px;
+  border: 2px double rgba(75, 75, 75, 0.9);
+  border-radius: 15px;
+  height: 500px;
+  width: 300px;
+  /* margin-bottom: 50px; */
+  background-color: rgba(0, 0, 0);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: white;
+  filter: grayscale(100%);
+}
+
+.itemContainer:hover {
+  filter: grayscale(0%);
+  transition: 1s;
+  border: 2px solid rgb(50, 40, 220);
+}
+
+.itemContainer img {
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.itemText {
+  padding: 10px;
+  padding-top: 0;
+  margin-top: -10px;
+}
+
+.orderbtn {
+  width: 95%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  background-color: gray;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+}
+
+.orderbtn:hover {
+  width: 95%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  background-color: rgb(50, 40, 220);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.5s;
+  left: 8px;
+  bottom: 10px;
+  position: absolute;
+}
+
+.footerInfo:hover {
+  cursor: pointer;
+}
+.categories {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.leftInnerContent {
+  width: 95%;
+  max-height: 50px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.leftInnerContent:hover {
+  width: 95%;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-color: rgb(50, 40, 220);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  font-style: italic;
+  font-size: large;
+}
+
+.leftInnerContent p {
+  padding-left: 25px;
+}
+
+.dark {
+  background-color: rgb(100, 100, 100);
+}
+
+.light {
+  background-color: rgb(150, 150, 150);
+}
+
+.topBar {
+  border-radius: 15px 15px 0 0;
+}
+
+.bottomBar {
+  border-radius: 0 0 15px 15px;
+}
